@@ -1,0 +1,60 @@
+ /* Estilos generales */
+ * {
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+}
+
+.main_title {
+   text-align: center;
+}
+
+.parrafoCentrado {
+   text-align: center;
+}
+
+.carpiImg {
+   display: flex;
+   justify-content: center;
+}
+
+.carpiZone {
+   display: flex;
+   justify-content: center;
+}
+
+.p1 {
+   text-align: center;
+   color:red;
+}
+
+.p2 {
+   text-align: center;
+   color:blue;
+}
+
+.p3 {
+   text-align: center;
+   color:orange;
+}
+
+.centerStart {
+   display:flex;
+   justify-content: center;
+   margin-top: 2rem;
+}
+
+.carpiZone {
+   border: 4px solid #04633b;
+   border-radius: 2rem;
+   max-width: 16rem;
+   background-color: #39c58b;
+}
+
+.carpiZone:hover {
+   background-color: #32e732;
+   cursor: pointer;
+}
+
+.start {
+   margin: 8px;
+}
