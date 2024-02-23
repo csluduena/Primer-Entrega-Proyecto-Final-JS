@@ -8,3 +8,8 @@ alert("Bienvenido " + user_Name + ' a "CarpiCoder te pone la nota"');
 
 alert("A continuación se le mostrará una lista de la comisión #53940 JAVASCRIPT, introduzca nombre y apellido para consultar la nota.");
 
+// Obtener el elemento div que contiene el contenido de la página
+let contenido = document.getElementById("contenido");
+
+// Cambiar el estilo del div para que se muestre
+contenido.style.display = "block";
