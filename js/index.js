@@ -1,5 +1,5 @@
 // Al cargar la página, se muestra un prompt que pide el nombre del usuario
-let user_Name = prompt("Por favor, introdusca su nombre:");
+let user_Name = prompt("Por favor, introduzca su nombre:");
 
 // Si el usuario introduce un nombre, se guarda en la variable user_Name
 // Si el usuario cancela el prompt, la variable user_Name es null
@@ -21,7 +21,7 @@ contenido.style.display = "block";
 document.addEventListener('DOMContentLoaded', function() {
    document.getElementById('myLink').addEventListener('click', function(event) {
      event.preventDefault(); // Previene la acción predeterminada del enlace
-     var newWindow = window.open('./pages/calificaciones.html'); // Abre la nueva página en una nueva ventana o pestaña
+     var newWindow = window.open('./pages/carpiexamen.html'); // Abre la nueva página en una nueva ventana o pestaña
 
      // Comprueba cada segundo si la ventana está cerrada
       var checkWindowClosed = setInterval(function() {
