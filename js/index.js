@@ -18,6 +18,23 @@ contenido.style.display = "block";
 document.addEventListener('DOMContentLoaded', function() {
    document.getElementById('myLink').addEventListener('click', function(event) {
      event.preventDefault(); // Previene la acción predeterminada del enlace
-     window.open('./pages/calificaciones.html'); // Abre la nueva página en la misma pestaña
+     var newWindow = window.open('./pages/calificaciones.html'); // Abre la nueva página en una nueva ventana o pestaña
+
+     // Comprueba cada segundo si la ventana está cerrada
+      var checkWindowClosed = setInterval(function() {
+         if (newWindow.closed) {
+         alert('Bueno, eso fue gracioso... 💥La Página Explotó💥');
+         clearInterval(checkWindowClosed);
+         }
+      }, 1000);
    });
 });
+
+
+
+
+
+
+     //      window.open('./pages/calificaciones.html'); // Abre la nueva página en la misma pestaña
+//    });
+// });
