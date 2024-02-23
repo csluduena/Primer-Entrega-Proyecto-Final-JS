@@ -14,6 +14,9 @@ let contenido = document.getElementById("contenido");
 // Cambiar el estilo del div para que se muestre
 contenido.style.display = "block";
 
+
+//Lo siguiente es MEME. 
+
 // Asegurarse de que el DOM esté completamente cargado antes de ejecutar el código
 document.addEventListener('DOMContentLoaded', function() {
    document.getElementById('myLink').addEventListener('click', function(event) {
@@ -29,12 +32,3 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 1000);
    });
 });
-
-
-
-
-
-
-     //      window.open('./pages/calificaciones.html'); // Abre la nueva página en la misma pestaña
-//    });
-// });

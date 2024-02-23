@@ -4,12 +4,25 @@
    font-family: Arial, sans-serif;
 }
 
-.main_title {
+body {
+   background-color: rgb(32, 46, 46);
+}
+
+.main_title1 {
+   color: white;
    text-align: center;
+   text-shadow: rgb(0, 0, 0) 4px 4px;
+}
+
+.main_title2 {
+   color: white;
+   text-align: center;
+   text-shadow: rgb(0, 0, 0) 4px 4px;
 }
 
 .parrafoCentrado {
    text-align: center;
+   color: white;
 }
 
 .carpiImg {

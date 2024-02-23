@@ -1,13 +1,9 @@
-// Obtener el elemento que tiene la clase "centerStart"
 let boton = document.getElementsByClassName("centerStart")[0];
 
 // Crear la función que se ejecuta al hacer clic en el botón
 function jugar() {
-  // Poner todo el código del juego de preguntas aquí
-  // Crear una variable para guardar el puntaje del usuario, e inicializarla en 0
    let puntaje = 0;
-
-   // Crear un objeto con las 10 preguntas y sus respuestas
+   // Creamos un objeto con las 10 preguntas y las respuestas
    let preguntas = {
       pregunta1: {
          texto: "Pregunta 1: ¿Messi es mejor que CR7?",
@@ -51,13 +47,10 @@ function jugar() {
       },
    };
 
-
-   // Usar un bucle for para recorrer las propiedades del objeto
+   //Usamos un for para recorrer las propiedades del objeto
    for (let i = 1; i <= 10; i++) {
-      // Mostrar el prompt con la pregunta
-      let respuesta = prompt(preguntas["pregunta" + i].texto + " - Tipea: SI o NO");
-      // Comparar la respuesta del usuario con la respuesta correcta
-      if (respuesta.toLowerCase() == preguntas["pregunta" + i].respuesta) {
+         let respuesta = prompt(preguntas["pregunta" + i].texto + " - Tipea: SI o NO");
+         if (respuesta.toLowerCase() == preguntas["pregunta" + i].respuesta) {
       // Si la respuesta es correcta, sumar 10 puntos al puntaje del usuario
          puntaje += 10;
       // Mostrar un alert que diga "Correcto, sumas 10 puntos"
@@ -69,18 +62,18 @@ function jugar() {
       }
    }
 
-  // Al final del bucle, mostrar un prompt con el puntaje final del usuario
+  // Al final del bucle, muestro un prompt con el puntaje final del usuario
   // y un mensaje que diga si aprobó o no el CarpiCurso
    if (puntaje >= 70) {
       alert("Felicidades, aprobaste el CarpiCurso con " + puntaje + " puntos");
    } else {
       alert("Tu puntaje es " + puntaje + ". Estás totalmente fuera de onda");
    }
-   // Muestra un cuadro de diálogo al usuario
+   // Mostramos un cuadro de diálogo al usuario
    var userConfirmed = confirm('¿Desea usted autodestruir esta cosa y olvidar totalmente su existencia?');
 
    if (userConfirmed) {
-      // El usuario hizo clic en Aceptar, por lo que cerramos la ventana
+      // Si acepta ocurre la magia.
       window.close();
    }
 }
