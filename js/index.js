@@ -6,7 +6,7 @@ let user_Name = prompt("Por favor, introdusca su nombre:");
 
 alert("Bienvenido " + user_Name + ' a "CarpiCoder te pone la nota"');
 
-alert("A continuación se le mostrará una lista de la comisión #53940 JAVASCRIPT, introduzca nombre y apellido para consultar la nota.");
+alert("¡A continuación podrás hacer el examen virtual de la comisión #53940 JAVASCRIPT versión CarpiCrazy!");
 
 // Obtener el elemento div que contiene el contenido de la página
 let contenido = document.getElementById("contenido");
