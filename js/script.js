@@ -76,6 +76,13 @@ function jugar() {
    } else {
       alert("Tu puntaje es " + puntaje + ". Estás totalmente fuera de onda");
    }
+   // Muestra un cuadro de diálogo al usuario
+   var userConfirmed = confirm('¿Desea usted autodestruir esta cosa y olvidar totalmente su existencia?');
+
+   if (userConfirmed) {
+      // El usuario hizo clic en Aceptar, por lo que cerramos la ventana
+      window.close();
+   }
 }
 
 // Asignar la función al evento click del botón
