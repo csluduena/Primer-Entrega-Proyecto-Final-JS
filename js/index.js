@@ -1,6 +1,10 @@
 // Al cargar la página, se muestra un prompt que pide el nombre del usuario
 let user_Name = prompt("Por favor, introduzca su nombre:");
 
+   while (user_Name == null || !(user_Name.length >= 3)) {
+      user_Name = prompt("Por favor, no sea un antipático virtual, ingrese un nombre, así puedo saber quien es usted!");
+   }
+
 // Si el usuario introduce un nombre, se guarda en la variable user_Name
 // Si el usuario cancela el prompt, la variable user_Name es null
 
